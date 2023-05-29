@@ -1,0 +1,40 @@
+footer {
+    background-color: #eb6f27;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: -15px;
+    margin-right: -10px;
+    height: 128px;
+    bottom: 0;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .seccion-izquierda {
+    font-size: 14px;
+  }
+  
+  .seccion-derecha {
+    font-size: 16px;
+  }
+  
+  .seccion-derecha a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .seccion-derecha a:hover {
+    color: #01090c;
+  }
+  

@@ -1,0 +1,20 @@
+.boton {
+  background-color: #19db13;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+  
+.boton:hover {
+  background-color: #3e4d8a;
+  color: white;
+}
+
+div{
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+}
+
+label{
+  color: white;
+}

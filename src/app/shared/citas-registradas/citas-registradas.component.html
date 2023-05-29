@@ -1,0 +1,18 @@
+<p-table [columns]="columnas" [value]="citas" selectionMode="single" styleClass="p-datable-striped" >
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th *ngFor="let col of columns" class="text-center">{{ col }}</th>
+      </tr>
+    </ng-template>
+  
+    <ng-template pTemplate="body" let-cita>
+      <tr>
+      <td style="text-align: center">{{ cita.nombre }}</td>
+      <td style="text-align: center">{{ cita.correo }}</td>
+      <td style="text-align: center">{{ cita.salaS }}</td>
+      <td style="text-align: center">{{ cita.peli }}</td>
+      <td style="text-align: center">{{ cita.date }}</td>
+    </tr>
+    </ng-template>
+  </p-table>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

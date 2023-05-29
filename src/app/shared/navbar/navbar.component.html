@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">CineLandia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/dulce">Dulceria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/about">Acerca De</a>
+      </li>          
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/contactanos">Contactanos</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/reserva">Hacer una reservación</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/reservaciones">Reservaciones</a>
+      </li>
+
+      </ul>
+
+      <div class="d-flex">
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" 
+                     #txtBuscar
+                     (keyup.enter)="buscarPelicula(txtBuscar.value)"
+                     type="search" 
+                     placeholder="Buscar Pelicula" 
+                     aria-label="Search"
+                     
+                     >
+              <button (click)="buscarPelicula(txtBuscar.value)" class="btn btn-outline-secondary my-2 my-sm-8" type="submit">Buscar</button>
+          </form>
+      </div>
+
+      
+    </div>
+  </div>
+</nav>
